@@ -3,6 +3,10 @@ import './Header.css'
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import AppsIcon from '@material-ui/icons/Apps';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import Avatar from '@material-ui/core/Avatar';
 
 function Header() {
     return (
@@ -19,10 +23,18 @@ function Header() {
             </div>
             <div className="header__middle">
                 <SearchIcon />
+                <input placeholder="search mail" type="text"/>
+                <ArrowDropDownIcon className="header__inputCarret"/>
 
             </div>
             <div className="header__right">
-
+                <IconButton>
+                <AppsIcon/>
+                </IconButton>
+                <IconButton>
+                    <NotificationsIcon/>
+                </IconButton>
+                <Avatar/>
             </div>
             
         </div>
