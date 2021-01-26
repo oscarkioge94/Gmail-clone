@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import SideBar from './components/SideBar';
+import Mail from './components/Mail';
+import EmailList from './components/EmailList';
 import {
   BrowserRouter as Router,
   Switch,
