@@ -1,5 +1,5 @@
 import React from 'react'
-import '/Mail.css'
+import './Mail.css'
 
 function Mail() {
     return (
