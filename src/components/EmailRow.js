@@ -5,10 +5,12 @@ import React from 'react'
 import './EmailRow.css'
 import StarOutlineIcon from '@material-ui/icons/StarOutline';
 import LabelImportantIcon from '@material-ui/icons/LabelImportant';
+import { useHistory } from "react-router-dom"
 
 function EmailRow({title, subject, description, time, id}) {
+    const history = useHistory();
     return (
-        <div className='emailRow'>
+        <div onClick={() => history.push('/mail')} className='emailRow'>
             <div className='emaiRow__options'>
                 <Checkbox/>
                 <IconButton>

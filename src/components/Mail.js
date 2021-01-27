@@ -4,6 +4,7 @@ import './Mail.css'
 function Mail() {
     return (
         <div className='mail'>
+            <h1>im rocking</h1>
             
         </div>
     )
