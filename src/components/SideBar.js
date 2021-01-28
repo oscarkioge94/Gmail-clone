@@ -15,14 +15,20 @@ import { IconButton } from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';
 import DuoIcon from '@material-ui/icons/Duo';
 import PhoneIcon from '@material-ui/icons/Phone';
+import { useDispatch } from "react-redux"
+import { openSendMessage } from "../features/mailSlice";
+
 function SideBar() {
+    const dispatch = useDispatch()
     return (
         <div className='sidebar'>
-            <Button 
+            <Button
+            startIcon={<AddIcon fontSize="large"/>} 
             className='sidebar__compose'
-            startIcon={<AddIcon fontSize="large"/>
-            
-            }>Compose</Button>
+            onClick={() => dispatch(openSendMessage())}
+            >
+                Compose
+                </Button>
             <SideBarOptions Icon={InboxIcon} title='inbox' number={54} selected={true}/>
             <SideBarOptions Icon={AccessTimeIcon} title='snoozed' number={54}/>
             <SideBarOptions Icon={LabelImportantIcon} title='important' number={54}/>
