@@ -10,6 +10,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import SendMail from './components/SendMail';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         </Route>
       </Switch>
       </div>
-      
+      <SendMail/>
     </div>
     </Router>
   );
