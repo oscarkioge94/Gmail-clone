@@ -20,7 +20,7 @@ function SendMail() {
                 </div>    
             
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input name='to' type='email' placeholder='To' type='text' ref={register({required: true})}/>
+                <input name='to' type='email' placeholder='To'  ref={register({required: true})}/>
                 {errors.to && <p className='sendMail__error'>To is required</p>}
                 <input name='subject' placeholder='Subject' type='text' ref={register({required: true})}/>
                 {errors.subject && <p className='sendMail__error'>Subject is required</p>}
