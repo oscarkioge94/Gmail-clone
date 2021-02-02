@@ -2,6 +2,9 @@
   flex: 1;
   overflow: scroll;
 }
+.emailList::-webkit-scrollbar {
+  display: none;
+}
 .emailList__settings {
   display: flex;
   position: sticky;
